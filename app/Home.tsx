@@ -13,9 +13,8 @@ export default function Home() {
       {/* Promo Section */}
       <View style={styles.promoContainer}>
         <Image
-          source={{ uri: 'https://pin.it/5sqevJw4h' }}  // Gambar produk kecantikan
-          style={styles.promoImage}
-        />
+          source={{ uri: '../assets/images/pengantin.jpg' }}  // Gambar produk kecantikan
+          style={styles.promoImage} />
         <Text style={styles.promoText}>Diskon Spesial! Jangan Lewatkan.</Text>
       </View>
 

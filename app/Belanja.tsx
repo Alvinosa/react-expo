@@ -2,13 +2,14 @@ import React from 'react';
 import { View, Text, FlatList, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
+// Data produk
 const products = [
   {
     id: '1',
     title: 'Tas Pink Cantik',
-    description: 'Tas stylish yang cocok untuk segala acara!',
+    description: 'Tas rajut yang cocok untuk healing!',
     price: 'Rp. 150.000',
-    image: 'https://example.com/bag.png',
+    image: require('../assets/images/tas rajut.jpg'),
     icon: 'cart',
   },
   {
@@ -16,26 +17,59 @@ const products = [
     title: 'Sepatu Imut',
     description: 'Buat langkahmu semakin percaya diri dengan sepatu imut ini.',
     price: 'Rp. 200.000',
-    image: 'https://example.com/shoes.png',
+    image: require('../assets/images/sepatu.jpg'),
     icon: 'cart',
   },
   {
     id: '3',
-    title: 'Baju Keren',
+    title: 'koren style',
     description: 'Tampil modis dengan baju terbaru dari koleksi kami.',
-    price: 'Rp. 120.000',
-    image: 'https://example.com/clothes.png',
+    price: 'Rp. 300.000',
+    image: require('../assets/images/korean style.jpg'),
     icon: 'cart',
   },
+  {
+   id: '4',
+    title: 'sepatu channel',
+    description: 'Tampil elegan dengan channel dari koleksi sepatu terbaru kami.',
+    price: 'Rp. 1.000.000',
+    image: require('../assets/images/cannel.jpg'),
+    icon: 'cart',
+  },
+  {
+    id: '3',
+    title: 'tas',
+    description: 'Tampil manis dengan pilihan tas berkualitas terbaru dari koleksi kami, dengan harga yang ramah dikantong ',
+    price: 'Rp. 100.000',
+    image: require('../assets/images/tas unik.jpg'),
+    icon: 'cart',
+  },
+  {
+    id: '3',
+    title: 'kemeja',
+    description: 'sangat cocok untuk kuliah dan jalan-jalan.',
+    price: 'Rp. 150.000',
+    image: require('../assets/images/kemeja.jpg'),
+    icon: 'cart',
+  },
+  {
+    id: '3',
+    title: 'fantouvle',
+    description: 'Tampil modis dengan sepatu fantuvle terbaik dari koleksi kami.',
+    price: 'Rp. 250.000',
+    image: require('../assets/images/terbaik.jpg'),
+    icon: 'cart',
+  }
 ];
 
+// Komponen utama
 export default function Belanja() {
   const renderItem = ({ item }) => (
     <View style={[styles.productCard, { backgroundColor: item.id % 2 === 0 ? '#FFEBF1' : '#FFF0F6' }]}>
       <View style={styles.iconContainer}>
-        <Ionicons name={item.icon} size={24} color="#FF69B4" />
+        <Ionicons name={item.icon} size={20} color="#FF69B4" />
       </View>
-      <Image source={{ uri: item.image }} style={styles.productImage} />
+      <Image source={item.image} style={styles.productImage} />
       <View style={styles.productContent}>
         <Text style={styles.productTitle}>{item.title}</Text>
         <Text style={styles.productDescription}>{item.description}</Text>
