@@ -13,7 +13,7 @@ export default function Home() {
       {/* Promo Section */}
       <View style={styles.promoContainer}>
         <Image
-          source={{ uri: '../assets/images/pengantin.jpg' }}  // Gambar produk kecantikan
+          source={require('../assets/images/fashion.jpg')}
           style={styles.promoImage} />
         <Text style={styles.promoText}>Diskon Spesial! Jangan Lewatkan.</Text>
       </View>
@@ -55,6 +55,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 20,
   },
+  topRightImage: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    width: 50,
+    height: 50,
+    borderRadius: 25, 
+  },
   header: {
     alignItems: 'center',
     marginBottom: 16,
@@ -73,7 +81,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   promoImage: {
-    width: '100%',
+    width: '50%',
     height: 200,
     borderRadius: 10,
     marginBottom: 10,
@@ -140,4 +148,4 @@ const styles = StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
   },
-});
+}); 
