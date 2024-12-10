@@ -7,24 +7,23 @@ const favorites = [
     id: '1',
     title: 'Baju stylish korea',
     description: 'Pilih warna untuk penampilan yang lebih cerah!',
-    image: 'https://example.com/lipstick.png',
+    image: require('../assets/images/korean style.jpg'),
     icon: 'heart',
   },
   {
     id: '2',
     title: 'Tas menawan imut',
     description: 'Tas ini bisa membuatmu semakin bergaya.',
-    image: 'https://example.com/bracelet.png',
+    image: require('../assets/images/tas rajut.jpg'),
     icon: 'heart',
   },
   {
     id: '3',
     title: 'Sepatu cantik',
     description: 'Kenyamanan dan gaya dalam satu langkah!',
-    image: 'https://example.com/shoes.png',
+    image: require('../assets/images/sepatu.jpg'),
     icon: 'heart',
   },
-  // Tambahkan item favorit lainnya jika diperlukan
 ];
 
 export default function Favorite() {
@@ -33,7 +32,7 @@ export default function Favorite() {
       <View style={styles.iconContainer}>
         <Ionicons name={item.icon} size={24} color="#FF69B4" />
       </View>
-      <Image source={{ uri: item.image }} style={styles.favoriteImage} />
+      <Image source={item.image} style={styles.favoriteImage} />
       <View style={styles.favoriteContent}>
         <Text style={styles.favoriteTitle}>{item.title}</Text>
         <Text style={styles.favoriteDescription}>{item.description}</Text>

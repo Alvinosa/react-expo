@@ -37,7 +37,7 @@ const products = [
     icon: 'cart',
   },
   {
-    id: '3',
+    id: '5',
     title: 'tas',
     description: 'Tampil manis dengan pilihan tas berkualitas terbaru dari koleksi kami, dengan harga yang ramah dikantong ',
     price: 'Rp. 100.000',
@@ -45,7 +45,7 @@ const products = [
     icon: 'cart',
   },
   {
-    id: '3',
+    id: '6',
     title: 'kemeja',
     description: 'sangat cocok untuk kuliah dan jalan-jalan.',
     price: 'Rp. 150.000',
@@ -53,7 +53,7 @@ const products = [
     icon: 'cart',
   },
   {
-    id: '3',
+    id: '7',
     title: 'fantouvle',
     description: 'Tampil modis dengan sepatu fantuvle terbaik dari koleksi kami.',
     price: 'Rp. 250.000',
